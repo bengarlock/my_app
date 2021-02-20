@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: my_app_production
-  username: postgres
+  username: deploy
   password: chocolate100X
