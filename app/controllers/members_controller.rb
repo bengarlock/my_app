@@ -14,7 +14,7 @@ class MembersController < ApplicationController
 
   def update
     @member = Member.find_by(params[:id])
-    @member.update!(params)
+    @member.update(member_params)
     render json: @member
   end
 
