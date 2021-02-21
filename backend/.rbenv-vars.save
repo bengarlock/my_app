@@ -1,0 +1,5 @@
+DATABASE_URL=postgresql://deploy:chocolate100X@192.168.86.50/myapp
+
+RAILS_MASTER_KEY=ohai
+SECRET_KEY_BASE=1234567890tendiestendiesallforme03b5ee4d234fa53af7f1415944cb4d64
+
