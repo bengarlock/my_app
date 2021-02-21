@@ -1,7 +1,9 @@
 class MembersController < ApplicationController
 
+  skip_before_action :verify_authenticity_token
+
   def index
-    members = Member.all.sort_by{member.id}
+    members = Member.all
     render json:members
   end
 
