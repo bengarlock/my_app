@@ -1,0 +1,31 @@
+.auth-action-container {
+    padding: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #26264a;
+}
+
+.auth-action-container button {
+    margin-top: 10em;
+    color: white;
+    padding: 2em;
+    background-color: #2E2F30;
+}
+
+.auth-action-container button:hover{
+    background-color: #4183C4;
+    transition: .5s;
+}
+
+.auth-action-container button:focus {
+    outline: none;
+}

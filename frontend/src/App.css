@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-image: url("/Users/bengarlock/RubymineProjects/my_app/frontend/src/Media/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
