@@ -7,19 +7,24 @@ class MembersController < ApplicationController
     render json:@members
   end
 
+  def show
+    member = Member.find(params[:id])
+    render json: member
+  end
+
   def create
     member = Member.create(member_params)
     render json:member
   end
 
   def update
-    @member = Member.find_by(params[:id])
+    @member = Member.find(params[:id])
     @member.update(member_params)
     render json: @member
   end
 
   def destroy
-    @member = Member.find_by(params[:id])
+    @member = Member.find(params[:id])
     @member.destroy!
     render json: {}
   end
