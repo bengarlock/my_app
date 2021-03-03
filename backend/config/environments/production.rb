@@ -124,4 +124,5 @@ Rails.application.configure do
   config.assets.digest = true
 
   config.hosts << "bengarlock.com"
+  config.hosts << "83e6b134d5be.ngrok.io"
 end

@@ -75,4 +75,5 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   config.hosts << "bengarlock.com"
+  config.hosts << "83e6b134d5be.ngrok.io"
 end
