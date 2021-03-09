@@ -11,13 +11,24 @@ export default withOktaAuth(class Profile extends React.Component {
     }
 
     render() {
+        console.log(this.props.oktaAuth)
         return (
             <div className="profile-container">
                 <div className="container-item" id="profile-navbar">
-                    <h3>Welcome Patient</h3>
+                    <h3>Welcome {this.props.oktaAuth.authStateManager._authState.idToken.claims.name}</h3>
                 </div>
                 <div className="container-item" id="patient-content">
-                    patient content here
+                    {this.props.oktaAuth.authStateManager._authState.idToken.claims.extPatientId ?
+                        <>
+                            Your Patient ID number is: {this.props.oktaAuth.authStateManager._authState.idToken.claims.extPatientId}
+                        </>
+                        :
+                        <>
+                            You do not appear to have a Patient Id number.  Please contact support.
+                        </>
+                    }
+
+
 
                 </div>
                 <div className="container-item" id="logout">

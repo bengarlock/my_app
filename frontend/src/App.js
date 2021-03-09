@@ -8,7 +8,7 @@ import { BrowserRouter as Router} from "react-router-dom"
 
 
 const config = {
-    issuer: 'https://dev-49794790.okta.com/oauth2/default',
+    issuer: 'https://dev-49794790.okta.com/oauth2/aus896dh3og6g1dpF5d6',
     clientId: '0oa7xaqilV2hsYV9n5d6',
     redirectUri: window.location.origin + '/login/callback',
     scopes: ['openid', 'profile', 'email'],
@@ -22,6 +22,7 @@ class App extends React.Component {
 
 
   render() {
+
     return (
         <div className="App">
             <Router>
