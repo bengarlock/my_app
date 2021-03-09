@@ -18,7 +18,7 @@ export default withOktaAuth(class Profile extends React.Component {
                     <h3>Welcome {this.props.oktaAuth.authStateManager._authState.idToken.claims.name}</h3>
                 </div>
                 <div className="container-item" id="patient-content">
-                    {this.props.oktaAuth.authStateManager._authState.idToken.claims.extPatientId ?
+                    {this.props.oktaAuth.authStateManager._authState.idToken.claims.memberId ?
                         <>
                             Your Patient ID number is: {this.props.oktaAuth.authStateManager._authState.idToken.claims.memberId}
                         </>
