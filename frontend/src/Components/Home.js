@@ -26,13 +26,11 @@ export default withOktaAuth(class Home extends React.Component {
                     <Route exact path="/">
                         {this.props.authState.isAuthenticated ? <Redirect to="/profile" /> : <Login />}
                     </Route>
-                    <Route path="/login" render={() =>
+                    <Route path="/login" basename="/login" render={() =>
                         <Login baseUrl={"https://dev-49794790.okta.com"} />}
                     />
-                    <Route path="/login/callback" exact={true} component={LoginCallback}/>
-                    <SecureRoute path='/profile' render={() => <Profile />}/>
-                    <SecureRoute path='/profile'
-                                 render={() => <Profile />}/>
+                    <Route path="/login/callback" basename="/login/callback" exact={true} component={LoginCallback}/>
+                    <SecureRoute path='/profile' basename="/profile" render={() => <Profile />}/>
 
             </div>
         )

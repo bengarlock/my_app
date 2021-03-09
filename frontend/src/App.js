@@ -15,7 +15,6 @@ const config = {
     pkce: true
 };
 
-const backendUrl = "http://127.0.0.1:3000"
 const oktaAuth = new OktaAuth(config);
 
 class App extends React.Component {
