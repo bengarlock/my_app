@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("/Users/bengarlock/WebstormProjects/okta_challenge_group_3_3-3-2021/frontend/src/Media/background.jpg");
+  background-image: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3543&q=80");
   background-repeat: no-repeat;
   background-position: center;
 }
